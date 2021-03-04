@@ -2,6 +2,7 @@
 class Game
   attr_accessor :board
   
+  WIN_COMBINATIONS = []
 end
 # A game has one board through it board property
 
