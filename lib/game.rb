@@ -1,6 +1,7 @@
 # The Game class is the main model of the application and represents singular instance of a Tic-tac-toe session
 class Game
-  attr_accessor :board
+  # A game has one board through it board property
+  attr_accessor :board, :player_1, :player_2 
   
   WIN_COMBINATIONS = [[0,1,2],
   [3,4,5],
@@ -11,7 +12,7 @@ class Game
   [0,4,8],
   [2,4,6]]
 end
-# A game has one board through it board property
+
 
 # A game has two players stored in a player_1 and player_2 property
 
