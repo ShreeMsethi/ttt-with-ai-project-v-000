@@ -1,6 +1,7 @@
 # The Game class is the main model of the application and represents singular instance of a Tic-tac-toe session
 class Game
   # A game has one board through it board property
+  # A game has two players stored in a player_1 and player_2 property
   attr_accessor :board, :player_1, :player_2 
   
   WIN_COMBINATIONS = [[0,1,2],
@@ -11,6 +12,8 @@ class Game
   [2,5,8],
   [0,4,8],
   [2,4,6]]
+  
+  #Board and Player do not directly relate to the Game but do collaborate with each other through arguments
   
   def initialize(player_1 = Players::Human.new("X") , player_2 = Players::Human.new("O"), board = Board.new)
     @player_1 = player_1
@@ -25,9 +28,9 @@ class Game
 end
 
 
-# A game has two players stored in a player_1 and player_2 property
 
-#Board and Player do not directly relate to the Game but do collaborate with each other through arguments
+
+
 
 # Beyond providing relationships with player and a board, the Game instance must also provide the basic game runtime and logic.
 
