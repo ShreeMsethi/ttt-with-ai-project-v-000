@@ -3,7 +3,7 @@
 # Implement a move method that acceots a board and returns the move the comouter wants to make in the form of a 1-9 string.
 
 module Players
-  class Computer < Players
+  class Computer < Player
   end
 end  
   
