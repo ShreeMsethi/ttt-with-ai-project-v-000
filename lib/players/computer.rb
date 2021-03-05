@@ -2,4 +2,9 @@
 
 # Implement a move method that acceots a board and returns the move the comouter wants to make in the form of a 1-9 string.
 
-module 
+module Players
+  class Computer < Players
+  end
+end  
+  
+  
